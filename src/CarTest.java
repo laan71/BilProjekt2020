@@ -6,12 +6,17 @@ public class CarTest {
 
     private static void testSuite() {
         System.out.println("Testsuiten kører.");
+        System.out.println("Test 0 (enum skal give OFF: ");
+        testEnum();
         System.out.print("Test 1 (bilen skal være tændt): ");
         testStartCarWithCorrectKey();
         System.out.print("Test 2 (bilen skal ikke være tændt): ");
         testStartCarWithWrongKey();
         System.out.println("Test 3 (kørelyset skal være tændt): ");
         testDrivingLight();
+    }
+
+    private static void testEnum() {
     }
 
     private static void testDrivingLight() {

@@ -1,5 +1,3 @@
-import java.sql.Array;
-
 public class Car {
 
     /*
@@ -40,12 +38,12 @@ Til sidst   Bilen bør testes fra starten af med en så detaljeret test som muli
     private String password;
     public boolean engineOn = false;
     String[][] lights = {
-            {"frontlight", "false"},
-            {"backlight", "false"},
-            {"breaklight", "false"},
-            {"longlight", "false"},
-            {"turnlightRight", "false"},
-            {"turnlightLeft", "false"}
+            {String.valueOf(LightType.FRONTLIGHT), "false"},
+            {String.valueOf(LightType.BACKLIGHT), "false"},
+            {String.valueOf(LightType.BREAKLIGHT), "false"},
+            {String.valueOf(LightType.LONGLIGHT), "false"},
+            {String.valueOf(LightType.TURNLIGHTRIGHT), "false"},
+            {String.valueOf(LightType.TURNLIGHTLEFT), "false"}
     };
 
     Car() {
